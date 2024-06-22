@@ -1,0 +1,14 @@
+.home-parent {
+  border: solid green 3px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 600px;
+}
+/* .text-buttons {
+  border: solid 2px black;
+} */
+.image-box {
+  border: solid 2px blue;
+  height: 300px;
+  width: 300px;
+}
