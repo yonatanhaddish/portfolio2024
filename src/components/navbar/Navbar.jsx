@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./index.css";
 
 function Navbar() {
@@ -11,19 +11,29 @@ function Navbar() {
         </div>
         <div className="navbar-list">
           <div className="link-home" id="navlink-item">
-            <Link to="/">Home</Link>
+            <NavLink to="/" id="link">
+              Home
+            </NavLink>
           </div>
           <div className="link-about" id="navlink-item">
-            <Link to="/about">About</Link>
+            <NavLink to="/about" id="link">
+              About
+            </NavLink>
           </div>
           <div className="link-portfolio" id="navlink-item">
-            <Link to="/portfolio">Portfolio</Link>
+            <NavLink to="/portfolio" id="link">
+              Portfolio
+            </NavLink>
           </div>
           <div className="link-resume" id="navlink-item">
-            <Link to="/resume">Resume</Link>
+            <NavLink to="/resume" id="link">
+              Resume
+            </NavLink>
           </div>
           <div className="link-contact" id="navlink-item">
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact" id="link">
+              Contact
+            </NavLink>
           </div>
         </div>
       </div>

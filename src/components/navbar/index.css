@@ -1,23 +1,31 @@
 .navbar-parent {
-  border: solid red 2px;
+  /* border: solid red 2px; */
   display: grid;
   grid-template-columns: 150px auto;
-  background-color: aquamarine;
+  background-color: #101820;
 }
 .navbar-logo {
-  border: solid blue 2px;
+  /* border: solid blue 2px; */
   justify-self: end;
+  color: #fee715;
 }
 .navbar-list {
-  border: solid green 2px;
+  /* border: solid green 2px; */
   width: 80%;
   display: grid;
   grid-template-columns: repeat(5, 100px);
   justify-content: center;
 }
 #navlink-item {
-  border: solid 2px purple;
+  /* border: solid 2px purple; */
   align-self: center;
   justify-self: center;
   font-size: 20px;
+}
+#link {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  border-bottom: solid 2px #fee715;
 }
