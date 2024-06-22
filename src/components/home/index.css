@@ -1,14 +1,45 @@
 .home-parent {
-  border: solid green 3px;
+  /* border: solid green 3px; */
   display: grid;
   grid-template-columns: auto 1fr;
-  height: 600px;
+  column-gap: 300px;
+  height: 100%;
+  margin-left: 90px;
 }
-/* .text-buttons {
-  border: solid 2px black;
-} */
+.text-buttons {
+  border: solid 1px #fee715;
+  margin-top: 100px;
+  width: 400px;
+}
 .image-box {
-  border: solid 2px blue;
-  height: 300px;
-  width: 300px;
+  /* border: solid 2px white; */
+  height: 350px;
+  width: 350px;
+}
+.button-parent {
+  border: solid goldenrod;
+  margin-top: 50px;
+  text-align: center;
+}
+.button-parent button {
+  height: 30px;
+  width: 90px;
+  margin: 20px;
+}
+.text-parent h3 {
+  font-family: Georgia;
+  color: white;
+  text-align: center;
+}
+.text-parent h2 {
+  font-family: Georgia;
+  color: white;
+  text-align: center;
+}
+.text-parent h1 {
+  font-family: Georgia;
+  color: white;
+}
+#name-yonatan {
+  color: #fee715;
 }

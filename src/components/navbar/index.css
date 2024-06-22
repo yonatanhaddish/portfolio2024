@@ -9,6 +9,9 @@
   justify-self: end;
   color: #fee715;
 }
+.navbar-logo h3 {
+  font-family: "Segoe Script";
+}
 .navbar-list {
   /* border: solid green 2px; */
   width: 80%;

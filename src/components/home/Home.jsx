@@ -10,7 +10,9 @@ function Home() {
       <div className="text-buttons">
         <div className="text-parent">
           <h3>HELLO!</h3>
-          <h1>I am Yonatan Haddish.</h1>
+          <h1>
+            I am <span id="name-yonatan">Yonatan Haddish</span>
+          </h1>
           <h2>A Full Stack Developer</h2>
         </div>
         <div className="button-parent">
