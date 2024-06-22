@@ -1,0 +1,18 @@
+.navbar-parent {
+  border: solid red 2px;
+  display: grid;
+  grid-template-columns: 80px auto;
+}
+.navbar-logo {
+  border: solid blue 2px;
+}
+.navbar-list {
+  border: solid green 2px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+}
+#navlink-item {
+  border: solid 1px pink;
+  align-items: center;
+}
