@@ -7,7 +7,7 @@
   margin-left: 90px;
 }
 .text-buttons {
-  border: solid 1px #fee715;
+  /* border: solid 1px #fee715; */
   margin-top: 100px;
   width: 400px;
 }
@@ -17,14 +17,21 @@
   width: 350px;
 }
 .button-parent {
-  border: solid goldenrod;
+  /* border: solid goldenrod; */
   margin-top: 50px;
   text-align: center;
 }
-.button-parent button {
-  height: 30px;
+.btn-1 {
+  height: 40px;
   width: 90px;
+  font-size: 15px;
+  font-weight: bold;
   margin: 20px;
+  border-radius: 60px;
+  border: solid 2px #000;
+}
+.btn-1:hover {
+  background-color: #fee715;
 }
 .text-parent h3 {
   font-family: Georgia;

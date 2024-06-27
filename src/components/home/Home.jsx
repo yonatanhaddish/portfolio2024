@@ -16,12 +16,12 @@ function Home() {
           <h2>A Full Stack Developer</h2>
         </div>
         <div className="button-parent">
-          <button>Hire Me</button>
-          <button>My Works</button>
+          <button className="btn-1">Hire Me</button>
+          <button className="btn-1">My Works</button>
         </div>
       </div>
       <div className="image-box">
-        <img src={image} style={imageStyle}></img>
+        <img src={image} style={imageStyle} alt="yonatan-profile-photo"></img>
       </div>
     </div>
   );
