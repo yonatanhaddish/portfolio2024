@@ -1,7 +1,38 @@
 .resume-parent {
   color: white;
-  border: solid red 1px;
+  /* border: solid red 1px; */
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 15%;
 }
 .skills {
-  border: solid 1px green;
+  /* border: solid 2px green; */
+  width: 90%;
+  margin-left: 20px;
+  /* padding-left: 20px; */
+}
+.experience {
+  /* border: solid 2px greenyellow; */
+  width: 90%;
+  margin-left: 20px;
+}
+.experience-single {
+  border-left: solid 1px #fee715;
+  border-bottom: solid 1px #fee715;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+h3 {
+  border-bottom: solid 2px #fee715;
+  width: 120px;
+  padding-left: 30px;
+}
+.resume-parent h1 {
+  color: #fee715;
+  text-align: center;
+}
+.skill-span {
+  font-weight: bold;
+  color: #fee715;
 }

@@ -4,24 +4,29 @@ import "./index.css";
 function Resume() {
   return (
     <div className="resume-parent">
+      <h1>Resume</h1>
       <div className="skills">
-        <h4>
-          Languages: CSS, HTML, JavaScript, SQL, Haskell, Plutus, Java, Ansible,
-          Linux and Unix OS
-        </h4>
-        <h4>
-          BackEnd: Express, Node.js, MongoDB, MySQL, GraphQL, Jest, APIs,
-          Postgres, MSSQL
-        </h4>
-        <h4>FrontEnd: React, Angular</h4>
-        <h4>
-          Tools: Git & GitHub, Bitbucket, Ansible Automation Tower, SSH, Github
-          Actions
-        </h4>
+        <h3>Skills</h3>
+        <p>
+          <span className="skill-span">Languages:</span> CSS, HTML, JavaScript,
+          SQL, Haskell, Plutus, Java, Ansible, Linux and Unix OS
+        </p>
+        <p>
+          <span className="skill-span">BackEnd:</span> Express, Node.js,
+          MongoDB, MySQL, GraphQL, Jest, APIs, Postgres, MSSQL
+        </p>
+        <p>
+          <span className="skill-span">FrontEnd: </span>React, Angular
+        </p>
+        <p>
+          <span className="skill-span">Tools:</span> Git & GitHub, Bitbucket,
+          Ansible Automation Tower, SSH, Github Actions
+        </p>
       </div>
       <div className="experience">
-        <div id="td-01">
-          <h4>December 2023 - July 2024</h4>
+        <h3>Experience</h3>
+        <div id="td-01" className="experience-single">
+          <p>December 2023 - July 2024</p>
           <h2>Associate Software Engineer | Toronto-Dominion Bank</h2>
           <ul>
             <li>
@@ -40,8 +45,8 @@ function Resume() {
             </li>
           </ul>
         </div>
-        <div id="td-02">
-          <h4>December 2022 - December 2023</h4>
+        <div id="td-02" className="experience-single">
+          <p>December 2022 - December 2023</p>
           <h2>Associate Software Engineer | Toronto-Dominion Bank</h2>
           <ul>
             <li>Learned basics about Network, load balancer(F5)</li>
@@ -63,8 +68,8 @@ function Resume() {
             </li>
           </ul>
         </div>
-        <div id="snapbrillia">
-          <h4>December 2021 - September 2022</h4>
+        <div id="snapbrillia" className="experience-single">
+          <p>December 2021 - September 2022</p>
           <h2>Full Stack Web3 Developer | Snapbrillia</h2>
           <ul>
             <li>
@@ -73,8 +78,8 @@ function Resume() {
             </li>
           </ul>
         </div>
-        <div id="angish">
-          <h4>August 2018 - July 2019</h4>
+        <div id="angish" className="experience-single">
+          <p>August 2018 - July 2019</p>
           <h2>FrontEnd Developer | Angish</h2>
           <ul>
             <li>
