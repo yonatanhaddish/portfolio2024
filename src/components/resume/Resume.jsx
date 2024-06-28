@@ -1,12 +1,22 @@
 import React from "react";
-import "./index.css";
+import "../resume/index.css";
+import { FaDownload } from "react-icons/fa";
 
 function Resume() {
   return (
     <div className="resume-parent">
-      <h1>Resume</h1>
-      <div className="skills">
-        <h3>Skills</h3>
+      <h1>Resume</h1>{" "}
+      <div className="download-resume">
+        <a
+          href=" https://drive.google.com/file/d/1MEbAz89f0il6_aUmdhaVCR55Xingj6jP/view?usp=drive_link"
+          target="_blank"
+        >
+          {" "}
+          <FaDownload />
+        </a>
+      </div>
+      <div className="skills title-resume">
+        <h2>Skills</h2>
         <p>
           <span className="skill-span">Languages:</span> CSS, HTML, JavaScript,
           SQL, Haskell, Plutus, Java, Ansible, Linux and Unix OS
@@ -23,11 +33,11 @@ function Resume() {
           Ansible Automation Tower, SSH, Github Actions
         </p>
       </div>
-      <div className="experience">
-        <h3>Experience</h3>
+      <div className="experience title-resume">
+        <h2>Experience</h2>
         <div id="td-01" className="experience-single">
+          <h3>Associate Software Engineer | Toronto-Dominion Bank</h3>
           <p>December 2023 - July 2024</p>
-          <h2>Associate Software Engineer | Toronto-Dominion Bank</h2>
           <ul>
             <li>
               Collaborated in the development of a dynamic web application using
@@ -46,8 +56,8 @@ function Resume() {
           </ul>
         </div>
         <div id="td-02" className="experience-single">
+          <h3>Associate Software Engineer | Toronto-Dominion Bank</h3>
           <p>December 2022 - December 2023</p>
-          <h2>Associate Software Engineer | Toronto-Dominion Bank</h2>
           <ul>
             <li>Learned basics about Network, load balancer(F5)</li>
             <li>
@@ -69,8 +79,8 @@ function Resume() {
           </ul>
         </div>
         <div id="snapbrillia" className="experience-single">
+          <h3>Full Stack Web3 Developer | Snapbrillia</h3>
           <p>December 2021 - September 2022</p>
-          <h2>Full Stack Web3 Developer | Snapbrillia</h2>
           <ul>
             <li>
               Doing some research on developing a new technology web3 app using
@@ -79,8 +89,9 @@ function Resume() {
           </ul>
         </div>
         <div id="angish" className="experience-single">
+          <h3>FrontEnd Developer | Angish</h3>
           <p>August 2018 - July 2019</p>
-          <h2>FrontEnd Developer | Angish</h2>
+
           <ul>
             <li>
               Collaborated with customers to determine needs and work through

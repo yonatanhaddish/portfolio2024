@@ -23,10 +23,13 @@
   padding-left: 20px;
   margin-bottom: 30px;
 }
-h3 {
+.experience-single h3 {
+  color: #fee715;
+}
+.title-resume h2 {
   border-bottom: solid 2px #fee715;
-  width: 120px;
-  padding-left: 30px;
+  width: fit-content;
+  margin-left: 150px;
 }
 .resume-parent h1 {
   color: #fee715;
@@ -35,4 +38,12 @@ h3 {
 .skill-span {
   font-weight: bold;
   color: #fee715;
+}
+.download-resume {
+  font-size: 15px;
+  margin-left: 20px;
+}
+a {
+  text-decoration: none;
+  color: green;
 }
