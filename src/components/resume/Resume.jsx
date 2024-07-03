@@ -19,7 +19,7 @@ function Resume() {
         <h2>Skills</h2>
         <p>
           <span className="skill-span">Languages:</span> CSS, HTML, JavaScript,
-          SQL, Haskell, Plutus, Java, Ansible, Linux and Unix OS
+          TypeScript, SQL, Haskell, Plutus, Java, Ansible
         </p>
         <p>
           <span className="skill-span">BackEnd:</span> Express, Node.js,
@@ -30,7 +30,7 @@ function Resume() {
         </p>
         <p>
           <span className="skill-span">Tools:</span> Git & GitHub, Bitbucket,
-          Ansible Automation Tower, SSH, Github Actions
+          Ansible Automation Tower, SSH, Github Actions, CI/CD pipeline, Linux
         </p>
       </div>
       <div className="experience title-resume">
@@ -59,14 +59,14 @@ function Resume() {
           <h3>Associate Software Engineer | Toronto-Dominion Bank</h3>
           <p>December 2022 - December 2023</p>
           <ul>
-            <li>Learned basics about Network, load balancer(F5)</li>
+            <li>Mastered basics about Network, load balancer(F5)</li>
             <li>
-              Learned and practised on basic Network LB Automation using Ansible
-              and Ansible Tower Platform
+              Mastered how to deploy a webpage using ansible into remote nodes
+              (servers)
             </li>
             <li>
-              Learned on how to install and update software’s using ansible
-              playbook into remote servers
+              Collaborated in the development of Automating Network
+              Load-Balancer using Ansible and Ansible Tower Platform
             </li>
             <li>
               Learned how to retrieve data information of F5 Load balancer and
