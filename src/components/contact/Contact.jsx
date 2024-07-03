@@ -80,7 +80,7 @@ function Contact() {
             />
           </div>
           <div>
-            <input
+            <textarea
               type="text"
               required
               placeholder="message"
