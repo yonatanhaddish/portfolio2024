@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import "../contact/index.css";
 
 function Contact() {
@@ -12,6 +13,8 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+
+  const form = useRef();
 
   function handleChangeName(event) {
     event.preventDefault();
@@ -31,18 +34,34 @@ function Contact() {
   }
   function handleSubmitForm(event) {
     event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_slx3nvi",
+        "template_ryy8wqk",
+        event.target,
+        "X40iR-BWrNLaMeJgL"
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
     setContactValue({
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     });
   }
-  console.log("contactValue", contactValue);
+  // console.log("contactValue", contactValue);
   return (
     <>
       <div className="contact-parent">
-        <form onSubmit={handleSubmitForm}>
+        <form ref={form} onSubmit={handleSubmitForm}>
           <div>
             <input
               required
