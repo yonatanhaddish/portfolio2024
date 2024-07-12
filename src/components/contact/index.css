@@ -1,30 +1,43 @@
-.contact-parent {
-  border: solid red 1px;
-  color: white;
+.contact-parent h1 {
+  color: #fee715;
+  text-align: center;
+}
+.contact-parent form {
+  width: 40%;
+  /* border: solid purple 2px; */
+  display: grid;
+  gap: 10px;
+  margin-left: 25%;
+  margin-top: 30px;
+  place-items: center;
+}
+.contact-parent form div {
+  /* border: solid green 3px; */
   height: fit-content;
-  width: 100%;
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  margin-top: 50px;
+  border: solid 2px #fee715;
 }
-form {
-  border: solid red 5px;
+.contact-parent form div input {
+  height: 35px;
+  width: 400px;
+  font-size: 18px;
+  border: solid 3px #000;
 }
-input {
-  border: solid green 2px;
-  width: 300px;
-  height: 40px;
-  font-size: 20px;
-  margin: 8px;
-}
-#message {
-  height: 150px;
-  width: 300px;
+.contact-parent form div textarea {
+  height: 100px;
+  width: 400px;
+  max-width: 400px;
+  min-width: 400px;
+  min-height: 30px;
+  font-size: 18px;
+  border: solid 3px #000;
 }
 button {
   height: 40px;
-  width: 100px;
-  font-size: 20px;
-  text-align: center;
+  width: 120px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: #fee715;
+  border-radius: 60px;
+  border: solid 2px #000;
 }

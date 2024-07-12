@@ -3,12 +3,6 @@ import emailjs from "emailjs-com";
 import "../contact/index.css";
 
 function Contact() {
-  const [contactValue, setContactValue] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -50,18 +44,17 @@ function Contact() {
           console.log("FAILED...", error);
         }
       );
-    setContactValue({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
   }
   // console.log("contactValue", contactValue);
   return (
     <>
       <div className="contact-parent">
         <form ref={form} onSubmit={handleSubmitForm}>
+          <h1>Contact Me</h1>
           <div>
             <input
               required
