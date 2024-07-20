@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import BasicModal from "../utils/BasicModal";
 import "./index.css";
 
 function Portfolio() {
   const [selectedSingleProject, setSelectedSingleProject] = useState("");
+  const [open, setOpen] = useState(false);
 
   const portfolio_obj = [
     {
@@ -25,6 +27,13 @@ function Portfolio() {
 
   function handleSelectedProject(event) {
     setSelectedSingleProject(event.target.innerHTML);
+    setOpen(true);
+  }
+  function handleOpenModal() {
+    setOpen(true);
+  }
+  function closeModal() {
+    setOpen(false);
   }
   return (
     <div className="portfolio-parent">
@@ -35,13 +44,22 @@ function Portfolio() {
             id="card"
             key={index}
             value={selectedSingleProject}
-            onClick={handleSelectedProject}
+            onClick={(event) => {
+              handleSelectedProject(event);
+              handleOpenModal();
+            }}
           >
             {item.name}
           </div>
         ))}
       </div>
-      <div></div>
+      <div>
+        <BasicModal
+          selectedSingleProject={selectedSingleProject}
+          open={open}
+          closeModal={closeModal}
+        />
+      </div>
     </div>
   );
 }
