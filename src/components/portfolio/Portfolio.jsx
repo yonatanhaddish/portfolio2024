@@ -24,17 +24,17 @@ function Portfolio() {
       url_link: `xyz_cardealership.test.com`,
     },
   ];
-
-  function handleSelectedProject(event) {
-    setSelectedSingleProject(event.target.innerHTML);
-    setOpen(true);
+  function handleSelectedProject(item) {
+    setSelectedSingleProject(item);
   }
   function handleOpenModal() {
     setOpen(true);
   }
-  function closeModal() {
+  function handleCloseModal() {
     setOpen(false);
+    setSelectedSingleProject("");
   }
+  // console.log("selectedSingleProject", selectedSingleProject);
   return (
     <div className="portfolio-parent">
       <h1>Portfolio</h1>
@@ -44,8 +44,8 @@ function Portfolio() {
             id="card"
             key={index}
             value={selectedSingleProject}
-            onClick={(event) => {
-              handleSelectedProject(event);
+            onClick={() => {
+              handleSelectedProject(item);
               handleOpenModal();
             }}
           >
@@ -57,7 +57,7 @@ function Portfolio() {
         <BasicModal
           selectedSingleProject={selectedSingleProject}
           open={open}
-          closeModal={closeModal}
+          closeModal={handleCloseModal}
         />
       </div>
     </div>

@@ -1,0 +1,21 @@
+.modal-parent {
+  height: 400px;
+  width: 60%;
+  margin-top: 250px;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-box {
+  height: 100%;
+  width: 100%;
+  background-color: #fee715;
+  display: flex;
+  flex-direction: column;
+}
+.modal-icons {
+  border: solid green 3px;
+}
+.modal-title {
+  border: solid gray 1px;
+}
