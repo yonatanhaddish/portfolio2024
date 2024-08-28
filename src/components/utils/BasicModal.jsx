@@ -1,7 +1,6 @@
 import * as React from "react";
 import "./index.css";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { CiLink } from "react-icons/ci";
